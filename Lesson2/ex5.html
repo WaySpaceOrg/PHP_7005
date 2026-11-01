@@ -16,49 +16,56 @@ a{color:#168bb7}.shell{width:min(1050px,calc(100% - 32px));margin:24px auto;flex
 <body>
 <div class="shell">
 <header class="topbar">
-<div class="brand"><div class="mark" aria-hidden="true">&lt;/&gt;</div><div><h1>PHP_7005</h1><p>Web Development Practice Project</p></div></div>
-<a class="back" href="../index.html">← กลับหน้าหลัก</a>
+  <div class="brand">
+    <div class="mark" aria-hidden="true">&lt;/&gt;</div>
+    <div><h1>PHP_7005</h1><p>Web Development Practice Project</p></div>
+  </div>
+  <a class="back" href="../index.html">← กลับหน้าหลัก</a>
 </header>
+
 <main>
-<section class="hero"><p class="eyebrow">LESSON 02 · EXERCISE 05</p><h2>ร้านกาแฟแมวเหมียว ✨</h2><p>แบบฝึกหัดการพัฒนาเว็บไซต์ · PHP_7005</p></section>
-<section class="panel">
-<header>
-        <h1>ร้านกาแฟแมวเหมียว</h1>
-        <!-- 1. เมนูหลัก nav#main-nav -->
-        <nav id="main-nav">
-            <a href="menu.html">เมนู</a>
-            <a href="cats.html">แมวประจำร้าน</a>
-            <a href="contact.html">ติดต่อ</a>
-        </nav>
+  <section class="hero">
+    <p class="eyebrow">LESSON 02 · EXERCISE 05</p>
+    <h2>ร้านกาแฟแมวเหมียว ✨</h2>
+    <p>แบบฝึกหัดการพัฒนาเว็บไซต์ · PHP_7005</p>
+  </section>
+
+  <section class="panel">
+    <header>
+      <h1>ร้านกาแฟแมวเหมียว</h1>
+      <p>กาแฟดี แมวน่ารัก เปิดทุกวัน 9 โมงถึง 6 โมงเย็น</p>
+      <!-- เมนูหลัก -->
+      <nav id="main-nav" aria-label="เมนูหลัก">
+        <a href="menu.html">เมนู</a>
+        <a href="cats.html">แมวประจำร้าน</a>
+        <a href="contact.html">ติดต่อ</a>
+      </nav>
     </header>
 
-    <main>
-        <p>กาแฟดี แมวน่ารัก เปิดทุกวัน 9 โมงถึง 6 โมงเย็น</p>
-    </main>
+    <!-- แผนผังเว็บไซต์ -->
+    <nav id="sitemap" aria-label="แผนผังเว็บไซต์">
+      <h2>แผนผังเว็บไซต์</h2>
+      <ul>
+        <li><a href="index.html">หน้าแรก</a>
+          <ul>
+            <li><a href="menu.html">เมนู</a>
+              <ul>
+                <li><a href="menu.html#drinks">เครื่องดื่ม</a></li>
+                <li><a href="menu.html#bakery">ขนม</a></li>
+              </ul>
+            </li>
+            <li><a href="cats.html">แมวประจำร้าน</a></li>
+            <li><a href="contact.html">ติดต่อ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </section>
 
-    <footer>
-        <!-- 2. site map ทั้งต้นไม้ nav#sitemap -->
-        <nav id="sitemap">
-            <ul>
-                <li><a href="index.html">หน้าแรก</a>
-                    <ul>
-                        <li><a href="menu.html">เมนู</a>
-                            <ul>
-                                <li><a href="menu.html#drinks">เครื่องดื่ม</a></li>
-                                <li><a href="menu.html#bakery">ขนม</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="cats.html">แมวประจำร้าน</a></li>
-                        <li><a href="contact.html">ติดต่อ</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </footer>
-</section>
-<div class="bottom"><a href="../index.html">← กลับไปยังหน้าแรก</a></div>
+  <div class="bottom"><a href="../index.html">← กลับไปยังหน้าแรก</a></div>
 </main>
 </div>
+
 <footer>© PHP_7005 · Web Development Practice · <a href="https://github.com/WaySpaceOrg/PHP_7005" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a></footer>
 </body>
 </html>
