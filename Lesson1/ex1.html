@@ -12,6 +12,15 @@ a{color:inherit}.shell{width:min(1050px,calc(100% - 32px));margin:24px auto;flex
 .hero{margin:22px 0;padding:clamp(24px,5vw,48px);background:linear-gradient(115deg,#dff4ff,#fff4d7 72%,#ffe4ec);border:3px solid var(--ink);border-radius:26px;box-shadow:5px 6px 0 #202b4b24;text-align:center}.eyebrow{margin:0 0 5px;color:#51617f;font-weight:800;letter-spacing:1.5px}.hero h2{margin:0;font-size:clamp(2rem,5vw,3.4rem);line-height:1.2}.hero h2 span{color:#168bb7}.hero p:last-child{margin:12px 0 0;color:var(--muted)}
 .content{display:grid;grid-template-columns:230px minmax(0,1fr);gap:20px;align-items:stretch}.panel{background:var(--paper);border:3px solid var(--ink);border-radius:22px;box-shadow:5px 6px 0 #202b4b24;overflow:hidden}.panel-title{margin:0;padding:13px 18px;color:white;background:var(--ink);font-size:1.15rem}.profile{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px 18px;text-align:center}.avatar{display:grid;place-items:center;width:120px;height:120px;margin:0 auto 15px;background:linear-gradient(145deg,#c8f3f2,#c7d9ff);border:3px solid var(--ink);border-radius:50%;font-size:4rem;box-shadow:4px 5px 0 #a9c6e9}.profile h3{margin:0;font-size:1.2rem;overflow-wrap:anywhere}.profile p{margin:5px 0 0;color:var(--muted)}.details{padding:20px}.info{margin:0;padding:18px;background:white;border:2px solid var(--ink);border-radius:17px}.info p{margin:0 0 12px}.info p:last-child{margin-bottom:0}.info strong{color:#168bb7}.sticker{display:inline-block;margin-top:16px;padding:8px 14px;background:var(--green);border:2px dashed #39845a;border-radius:999px;font-weight:800;transform:rotate(-2deg)}.bottom{display:flex;justify-content:center;margin:22px 0}.bottom a{padding:11px 19px;color:white;background:#273d69;border:2px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:900;box-shadow:3px 4px 0 #202b4b24}.bottom a:hover{color:var(--ink);background:var(--yellow)}footer{margin:0 16px 18px;padding:15px 20px;color:white;background:var(--ink);border:3px solid #111a32;border-radius:18px;text-align:center}footer a{color:#bdeeff;font-weight:800}
 @media(max-width:680px){.shell{width:calc(100% - 18px);margin:10px auto}.topbar{align-items:flex-start;flex-direction:column;padding:15px}.content{grid-template-columns:1fr}.profile{padding:20px}.hero{margin:15px 0}.back{align-self:flex-start}}
+
+.lesson-nav{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0 20px;padding:13px 16px;background:#fffdf8;border:2px solid #202b4b;border-radius:18px;box-shadow:3px 4px 0 #202b4b20}
+.lesson-nav a{display:inline-block;padding:5px 10px;border-radius:999px;background:#e7f4ff;color:#202b4b;text-decoration:none;font-size:.88rem;font-weight:800}
+.lesson-nav a:hover,.lesson-nav a:focus{background:#ffe28a;outline:2px solid #202b4b}
+.lesson-nav .home-link{background:#ffe28a}
+.lesson-group{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:4px 8px;border-left:2px dashed #c5cede}
+.lesson-group span{font-size:.85rem;font-weight:900;color:#66718b;margin-right:2px}
+@media(max-width:680px){.lesson-nav{gap:8px;padding:10px}.lesson-group{border-left:0;border-top:1px dashed #c5cede;width:100%;padding:7px 0 0}.lesson-nav a{font-size:.82rem;padding:5px 8px}}
+
 </style>
 </head>
 <body>
@@ -20,6 +29,12 @@ a{color:inherit}.shell{width:min(1050px,calc(100% - 32px));margin:24px auto;flex
 <div class="brand"><div class="mark" aria-hidden="true">&lt;/&gt;</div><div><h1>PHP_7005</h1><p>Web Development Practice Project</p></div></div>
 <a class="back" href="../index.html">← กลับหน้าหลัก</a>
 </header>
+<nav class="lesson-nav" aria-label="เมนูเชื่อมโยงทุกบทเรียน">
+  <a class="home-link" href="../index.html">⌂ หน้าแรก</a>
+  <div class="lesson-group"><span>บทที่ 1</span><a href="ex1.html">แบบฝึกหัด 1</a><a href="ex2.html">แบบฝึกหัด 2</a><a href="ex3.html">แบบฝึกหัด 3</a><a href="ex4.html">แบบฝึกหัด 4</a></div>
+  <div class="lesson-group"><span>บทที่ 2</span><a href="../Lesson2/ex1.html">แบบฝึกหัด 1</a><a href="../Lesson2/ex2.html">แบบฝึกหัด 2</a><a href="../Lesson2/ex3.html">แบบฝึกหัด 3</a><a href="../Lesson2/ex4.html">แบบฝึกหัด 4</a><a href="../Lesson2/ex5.html">แบบฝึกหัด 5</a><a href="../Lesson2/ex6.html">แบบฝึกหัด 6</a></div>
+  <div class="lesson-group"><span>บทที่ 3</span><a href="../Lesson3/ex1.html">แบบฝึกหัด 1</a><a href="../Lesson3/ex2.html">แบบฝึกหัด 2</a><a href="../Lesson3/ex3.html">แบบฝึกหัด 3</a><a href="../Lesson3/ex4.html">แบบฝึกหัด 4</a><a href="../Lesson3/ex5.html">แบบฝึกหัด 5</a><a href="../Lesson3/ex6.html">แบบฝึกหัด 6</a></div>
+</nav>
 <main>
 <section class="hero"><p class="eyebrow">LESSON 01 · EXERCISE 01</p><h2>ประวัติส่วนตัว <span>👋</span></h2><p>ยินดีต้อนรับสู่แบบฝึกหัดแรกของ Lesson 1</p></section>
 <div class="content">
