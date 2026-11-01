@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="utf-8">
-  <title>ประวัติส่วนตัว</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#202b4b">
+<title>ประวัติส่วนตัว | PHP_7005</title>
+<style>
+:root{--ink:#202b4b;--muted:#66718b;--paper:#fffdf8;--blue:#8ecbff;--yellow:#ffe28a;--pink:#ffc4d5;--green:#b9edcf;--cyan:#6ee7ef}
+*{box-sizing:border-box}body{min-height:100vh;margin:0;color:var(--ink);background:radial-gradient(circle at 8% 12%,#ffe28a88 0 7rem,transparent 7.1rem),radial-gradient(circle at 94% 30%,#8ecbff77 0 9rem,transparent 9.1rem),#f1f6ff;font-family:"Trebuchet MS",Tahoma,"Noto Sans Thai",sans-serif;line-height:1.65;display:flex;flex-direction:column}
+a{color:inherit}.shell{width:min(1050px,calc(100% - 32px));margin:24px auto;flex:1}.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:17px 24px;color:white;background:var(--ink);border:3px solid #111a32;border-radius:22px;box-shadow:5px 6px 0 #202b4b24}.brand{display:flex;align-items:center;gap:13px}.mark{display:grid;place-items:center;width:54px;height:54px;color:var(--ink);background:var(--cyan);border:3px solid white;border-radius:17px;font-size:25px;font-weight:900;transform:rotate(-5deg)}.brand h1{margin:0;font-size:clamp(1.35rem,4vw,1.9rem);line-height:1.1}.brand p{margin:4px 0 0;color:#d8e8ff;font-size:.9rem}.back{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;color:var(--ink);background:var(--yellow);border:2px solid white;border-radius:999px;text-decoration:none;font-weight:900;white-space:nowrap}.back:hover{background:var(--pink)}
+.hero{margin:22px 0;padding:clamp(24px,5vw,48px);background:linear-gradient(115deg,#dff4ff,#fff4d7 72%,#ffe4ec);border:3px solid var(--ink);border-radius:26px;box-shadow:5px 6px 0 #202b4b24;text-align:center}.eyebrow{margin:0 0 5px;color:#51617f;font-weight:800;letter-spacing:1.5px}.hero h2{margin:0;font-size:clamp(2rem,5vw,3.4rem);line-height:1.2}.hero h2 span{color:#168bb7}.hero p:last-child{margin:12px 0 0;color:var(--muted)}
+.content{display:grid;grid-template-columns:230px minmax(0,1fr);gap:20px;align-items:stretch}.panel{background:var(--paper);border:3px solid var(--ink);border-radius:22px;box-shadow:5px 6px 0 #202b4b24;overflow:hidden}.panel-title{margin:0;padding:13px 18px;color:white;background:var(--ink);font-size:1.15rem}.profile{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px 18px;text-align:center}.avatar{display:grid;place-items:center;width:120px;height:120px;margin:0 auto 15px;background:linear-gradient(145deg,#c8f3f2,#c7d9ff);border:3px solid var(--ink);border-radius:50%;font-size:4rem;box-shadow:4px 5px 0 #a9c6e9}.profile h3{margin:0;font-size:1.2rem;overflow-wrap:anywhere}.profile p{margin:5px 0 0;color:var(--muted)}.details{padding:20px}.info{margin:0;padding:18px;background:white;border:2px solid var(--ink);border-radius:17px}.info p{margin:0 0 12px}.info p:last-child{margin-bottom:0}.info strong{color:#168bb7}.sticker{display:inline-block;margin-top:16px;padding:8px 14px;background:var(--green);border:2px dashed #39845a;border-radius:999px;font-weight:800;transform:rotate(-2deg)}.bottom{display:flex;justify-content:center;margin:22px 0}.bottom a{padding:11px 19px;color:white;background:#273d69;border:2px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:900;box-shadow:3px 4px 0 #202b4b24}.bottom a:hover{color:var(--ink);background:var(--yellow)}footer{margin:0 16px 18px;padding:15px 20px;color:white;background:var(--ink);border:3px solid #111a32;border-radius:18px;text-align:center}footer a{color:#bdeeff;font-weight:800}
+@media(max-width:680px){.shell{width:calc(100% - 18px);margin:10px auto}.topbar{align-items:flex-start;flex-direction:column;padding:15px}.content{grid-template-columns:1fr}.profile{padding:20px}.hero{margin:15px 0}.back{align-self:flex-start}}
+</style>
 </head>
 <body>
-  <h1>dacho deekamwong</h1>
-  <p>77777777777777</p>
-  <p>55555555555555</p>
+<div class="shell">
+<header class="topbar">
+<div class="brand"><div class="mark" aria-hidden="true">&lt;/&gt;</div><div><h1>PHP_7005</h1><p>Web Development Practice Project</p></div></div>
+<a class="back" href="../index.html">← กลับหน้าหลัก</a>
+</header>
+<main>
+<section class="hero"><p class="eyebrow">LESSON 01 · EXERCISE 01</p><h2>ประวัติส่วนตัว <span>👋</span></h2><p>ยินดีต้อนรับสู่แบบฝึกหัดแรกของ Lesson 1</p></section>
+<div class="content">
+<aside class="panel"><h2 class="panel-title">🧑🏻‍💻 Profile</h2><div class="profile"><div class="avatar" aria-hidden="true">😊</div><h3>dacho deekamwong</h3><p>เจ้าของผลงาน</p><span class="sticker">Hello there! ✨</span></div></aside>
+<section class="panel"><h2 class="panel-title">📋 ข้อมูลส่วนตัว</h2><div class="details"><div class="info"><p><strong>ชื่อ:</strong> dacho deekamwong</p><p><strong>ข้อมูลเพิ่มเติม:</strong> 77777777777777</p><p><strong>ข้อความ:</strong> 55555555555555</p></div><span class="sticker">Keep Learning, Keep Growing! 🌱</span></div></section>
+</div>
+<div class="bottom"><a href="../index.html">← กลับไปยังหน้าแรก</a></div>
+</main>
+</div>
+<footer>© PHP_7005 · Web Development Practice · <a href="https://github.com/WaySpaceOrg/PHP_7005" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a></footer>
 </body>
 </html>
