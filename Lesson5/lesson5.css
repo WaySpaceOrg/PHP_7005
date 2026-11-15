@@ -1,0 +1,39 @@
+:root{--ink:#202b4b;--muted:#66718b;--paper:#fffdf8;--blue:#8ecbff;--yellow:#ffe28a;--pink:#ffc4d5;--green:#b9edcf;--cyan:#6ee7ef}
+*{box-sizing:border-box}
+body{min-height:100vh;margin:0;color:var(--ink);background:radial-gradient(circle at 8% 12%,#ffe28a88 0 7rem,transparent 7.1rem),radial-gradient(circle at 94% 30%,#8ecbff77 0 9rem,transparent 9.1rem),#f1f6ff;font-family:"Trebuchet MS",Tahoma,"Noto Sans Thai",sans-serif;line-height:1.65;display:flex;flex-direction:column}
+a{color:inherit}
+.shell{width:min(1050px,calc(100% - 32px));margin:24px auto;flex:1}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:17px 24px;color:white;background:var(--ink);border:3px solid #111a32;border-radius:22px;box-shadow:5px 6px 0 #202b4b24}
+.brand{display:flex;align-items:center;gap:13px}
+.mark{display:grid;place-items:center;width:54px;height:54px;flex:none;color:var(--ink);background:var(--cyan);border:3px solid white;border-radius:17px;font-size:25px;font-weight:900;transform:rotate(-5deg)}
+.brand h1{margin:0;font-size:clamp(1.35rem,4vw,1.9rem);line-height:1.1}
+.brand p{margin:4px 0 0;color:#d8e8ff;font-size:.9rem}
+.back{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;color:var(--ink);background:var(--yellow);border:2px solid white;border-radius:999px;text-decoration:none;font-weight:900;white-space:nowrap}
+.back:hover{background:var(--pink)}
+.lesson-nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 20px;padding:13px 16px;background:var(--paper);border:2px solid var(--ink);border-radius:18px;box-shadow:3px 4px 0 #202b4b20}
+.lesson-nav a{display:inline-block;padding:5px 10px;color:var(--ink);background:#e7f4ff;border-radius:999px;text-decoration:none;font-size:.88rem;font-weight:800}
+.lesson-nav a:hover,.lesson-nav a:focus,.lesson-nav a[aria-current=page]{background:var(--yellow);outline:2px solid var(--ink)}
+.hero{margin:22px 0;padding:clamp(24px,5vw,42px);background:linear-gradient(115deg,#dff4ff,#fff4d7 72%,#ffe4ec);border:3px solid var(--ink);border-radius:26px;box-shadow:5px 6px 0 #202b4b24;text-align:center}
+.eyebrow{margin:0 0 5px;color:#51617f;font-weight:800;letter-spacing:1.5px}
+.hero h2{margin:0;font-size:clamp(1.8rem,5vw,3rem);line-height:1.2}
+.hero p:last-child{margin:12px 0 0;color:var(--muted)}
+.panel{padding:clamp(18px,4vw,30px);background:var(--paper);border:3px solid var(--ink);border-radius:22px;box-shadow:5px 6px 0 #202b4b24;overflow:hidden}
+.panel h1,.panel h2,.panel h3{margin-top:0;color:var(--ink)}
+.panel p{margin:0 0 12px}
+.output{margin:0;padding:16px;overflow-x:auto;background:white;border:2px solid #cbd5e1;border-radius:14px;white-space:pre-wrap;font: .98rem/1.8 ui-monospace,SFMono-Regular,Consolas,monospace}
+.panel form{display:grid;gap:10px;max-width:650px}
+.panel label{font-weight:800}
+.panel input,.panel select,.panel textarea{width:100%;padding:11px 13px;border:2px solid #b8c5d8;border-radius:12px;background:white;color:var(--ink);font:inherit}
+.panel input:focus,.panel textarea:focus,.panel select:focus{outline:3px solid #8ecbff88;border-color:#168bb7}
+.panel button{width:fit-content;padding:10px 18px;border:2px solid var(--ink);border-radius:999px;background:var(--yellow);color:var(--ink);font:inherit;font-weight:900;cursor:pointer;box-shadow:3px 4px 0 #202b4b24}
+.panel button:hover{background:var(--pink)}
+.results{margin-top:20px;padding:16px;background:white;border:2px solid var(--ink);border-radius:14px}
+.results p{margin:0 0 8px}
+.results p:last-child{margin-bottom:0}
+.error{margin-top:16px;padding:10px 12px;background:#ffe4ec;border:2px solid #a43b58;border-radius:12px}
+.bottom{display:flex;justify-content:center;margin:22px 0}
+.bottom a{padding:11px 19px;color:white;background:#273d69;border:2px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:900;box-shadow:3px 4px 0 #202b4b24}
+.bottom a:hover{color:var(--ink);background:var(--yellow)}
+footer{margin:0 16px 18px;padding:15px 20px;color:white;background:var(--ink);border:3px solid #111a32;border-radius:18px;text-align:center}
+footer a{color:#bdeeff;font-weight:800}
+@media(max-width:680px){.shell{width:calc(100% - 18px);margin:10px auto}.topbar{align-items:flex-start;flex-direction:column;padding:15px}.hero{margin:15px 0}.back{align-self:flex-start}.panel{padding:16px}}
