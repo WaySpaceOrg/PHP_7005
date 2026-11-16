@@ -26,14 +26,14 @@
 <section class="panel">
     <h1>ผลลัพธ์</h1>
     <pre class="output"><?php
-$name   = "สมชาย";       // String
-$age    = 30;              // Integer
+$name   = "เดโช";         // String
+$age    = 39;              // Integer
 $gpa    = 3.75;            // Float
 $active = true;            // Boolean
 $note   = null;            // NULL
 
 echo gettype($name), "\n"; // string
-var_dump($age);            // int(30)
+var_dump($age);            // int(39)
 echo "\n";
 
 // String interpolation (ใส่ตัวแปรใน "")
