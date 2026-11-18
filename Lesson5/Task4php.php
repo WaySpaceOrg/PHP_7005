@@ -22,7 +22,7 @@
     <a href="Task6php.php">Task 6</a>
 </nav>
 <main>
-<section class="hero"><p class="eyebrow">LESSON 05 · TASK 04</p><h2>ตัวดำเนินการและฟังก์ชันข้อความ ✨</h2><p>ตัวอย่าง PHP · PHP_7005</p></section>
+<section class="hero"><p class="eyebrow">LESSON 05 · TASK 04</p><h2>ตัวดำเนินการและฟังก์ชันข้อความ ✨</h2><p>ตัวอย่าง PHP · ประมวลผลจริงบน PHP server</p></section>
 <section class="panel">
     <h1>ผลลัพธ์</h1>
     <pre class="output"><?php
@@ -50,6 +50,7 @@ $area = 23.1;
 echo $area . "\n";                       // 23.1   ← ทศนิยมไม่ครบ
 echo number_format($area, 2) . "\n";     // 23.10  ← ครบ 2 ตำแหน่งเสมอ
 ?></pre>
+    <p><a href="Task4.html">เปิดหน้า HTML preview</a></p>
 </section>
 <div class="bottom"><a href="../index.html">← กลับไปยังหน้าแรก</a></div>
 </main>

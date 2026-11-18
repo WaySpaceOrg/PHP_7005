@@ -22,7 +22,7 @@
     <a href="Task6php.php">Task 6</a>
 </nav>
 <main>
-<section class="hero"><p class="eyebrow">LESSON 05 · TASK 05</p><h2>คำนวณราคาและเพิ่มทิป ✨</h2><p>PHP คำนวณบนเซิร์ฟเวอร์ · JavaScript เพิ่มทิปในเบราว์เซอร์</p></section>
+<section class="hero"><p class="eyebrow">LESSON 05 · TASK 05</p><h2>คำนวณราคาและเพิ่มทิป ✨</h2><p>ตัวอย่างผลลัพธ์ PHP · ทดลองเพิ่มทิปได้ในเบราว์เซอร์</p></section>
 <section class="panel">
     <h1>ร้านกาแฟแมวเหมียว</h1>
     <?php
@@ -44,6 +44,7 @@
             document.getElementById("grand").textContent = "รวมทิป " + (total * 1.1).toFixed(2) + " บาท";
         });
     </script>
+    <p><a href="Task5.html">เปิดหน้า HTML preview</a></p>
 </section>
 <div class="bottom"><a href="../index.html">← กลับไปยังหน้าแรก</a></div>
 </main>

@@ -22,7 +22,7 @@
     <a href="Task6php.php">Task 6</a>
 </nav>
 <main>
-<section class="hero"><p class="eyebrow">LESSON 05 · TASK 03</p><h2>ตัวแปรและชนิดข้อมูล ✨</h2><p>ตัวอย่าง PHP · PHP_7005</p></section>
+<section class="hero"><p class="eyebrow">LESSON 05 · TASK 03</p><h2>ตัวแปรและชนิดข้อมูล ✨</h2><p>ตัวอย่าง PHP · ประมวลผลจริงบน PHP server</p></section>
 <section class="panel">
     <h1>ผลลัพธ์</h1>
     <pre class="output"><?php
@@ -43,6 +43,7 @@ echo "ชื่อ: $name อายุ: $age ปี\n";
 define("PI", 3.14159);
 echo PI, "\n";
 ?></pre>
+    <p><a href="Task3.html">เปิดหน้า HTML preview</a></p>
 </section>
 <div class="bottom"><a href="../index.html">← กลับไปยังหน้าแรก</a></div>
 </main>
