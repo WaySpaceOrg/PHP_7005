@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#202b4b">
+<title>Lesson 5 | Task 6</title>
+<link rel="stylesheet" href="lesson5.css">
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+    <div class="brand"><div class="mark" aria-hidden="true">&lt;/&gt;</div><div><h1>PHP_7005</h1><p>Web Development Practice Project</p></div></div>
+    <a class="back" href="../index.html">← กลับหน้าหลัก</a>
+</header>
+<nav class="lesson-nav" aria-label="เมนู Lesson 5">
+    <a href="../index.html">⌂ หน้าแรก</a>
+    <a href="Task2.html">Task 2</a>
+    <a href="Task3.html">Task 3</a>
+    <a href="Task4.html">Task 4</a>
+    <a href="Task5.html">Task 5</a>
+    <a href="Task6.html" aria-current="page">Task 6</a>
+</nav>
+<main>
+<section class="hero"><p class="eyebrow">LESSON 05 · TASK 06</p><h2>คำนวณส่วนลดและ VAT ✨</h2><p>เวอร์ชันเว็บ เปิดใช้งานได้โดยไม่ต้องใช้ PHP server</p></section>
+<section class="panel">
+    <h1>รายละเอียดสินค้า</h1>
+    <form id="calculator">
+        <label for="price">ราคาต่อชิ้น</label>
+        <input id="price" name="price" type="number" min="0" step="any" required>
+
+        <label for="qty">จำนวนสินค้า</label>
+        <input id="qty" name="qty" type="number" min="0" step="1" required>
+
+        <label for="discount">ส่วนลด</label>
+        <input id="discount" name="discount" type="number" min="0" step="any" required>
+
+        <button type="submit">คำนวณ</button>
+    </form>
+    <section id="results" class="results" aria-live="polite" hidden>
+        <p>ยอดก่อนลด = <span id="before-discount"></span> บาท</p>
+        <p>ยอดหลังลด = <span id="after-discount"></span> บาท</p>
+        <p>VAT 7% = <span id="vat"></span> บาท</p>
+        <p>ยอดสุทธิ = <span id="net-total"></span> บาท</p>
+    </section>
+</section>
+<div class="bottom"><a href="../index.html">← กลับไปยังหน้าแรก</a></div>
+</main>
+</div>
+<footer>© PHP_7005 · Web Development Practice · <a href="https://github.com/WaySpaceOrg/PHP_7005" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a></footer>
+<script>
+document.getElementById('calculator').addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const price = Number(form.elements.price.value);
+    const quantity = Number(form.elements.qty.value);
+    const discount = Number(form.elements.discount.value);
+    const beforeDiscount = price * quantity;
+    const afterDiscount = beforeDiscount - discount;
+    const vat = afterDiscount * 0.07;
+
+    document.getElementById('before-discount').textContent = beforeDiscount.toFixed(2);
+    document.getElementById('after-discount').textContent = afterDiscount.toFixed(2);
+    document.getElementById('vat').textContent = vat.toFixed(2);
+    document.getElementById('net-total').textContent = (afterDiscount + vat).toFixed(2);
+    document.getElementById('results').hidden = false;
+});
+</script>
+</body>
+</html>
